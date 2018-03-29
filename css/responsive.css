@@ -1,6 +1,7 @@
 .content {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 @media screen and (max-width: 360px) {
@@ -13,17 +14,52 @@
   .featured_header {
     font-size: 1.2em;
   }
-}
-
-@media screen and (min-width: 640px) and (max-width: 767px) {
-  .project {
-    width: 33%;
+  .project_title {
+    font-size: 1em;
+  }
+  .project_link {
+    font-size: 0.7em;
+    font-weight: 700;
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 899px){
+/* This rule is about taking care of widths between Nexus 5 portrait and landscape modes - to be more responsive than just the project's definietion */
+@media screen and (min-width: 361px) and (max-width: 597px) {
+    .header_title  {
+    font-size: 2em;
+  }
+   .header_description {
+    font-size: 1em; 
+  }
+  .featured_header {
+    font-size: 1.2em;
+  }
+  .project_title {
+    font-size: 1em;
+  }
+  .project_link {
+    font-size: 0.7em;
+    font-weight: 700;
+  }
   .project {
-    width: 33%;
+    margin: auto;
+  }
+}
+
+/*Nexus 5 has landscape width of 640px but a part of it is the android menu bar, hence @media query defined for 598px */
+@media screen and (min-width: 598px) and (max-width: 767px) {
+  .project {
+    width: 33.3333%;
+  }
+  .project_link {
+    font-size: 0.5em;
+    font-weight: 700;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .project {
+    width: 33.3333%;
   }
 }
 
@@ -32,5 +68,8 @@
     width: 900px;
     margin-left: auto;
     margin-right: auto;
+  }
+  .project {
+    width: 33.3333%;
   }
 }
