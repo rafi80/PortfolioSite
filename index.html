@@ -5,12 +5,125 @@
 		<meta name="viewport" content="width=device-width,initial-scale=1">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<title>Rafal Hlebionek - Portfolio Site</title>
-		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet" type="text/css">
-		<link rel="stylesheet" type="text/css" href="css/main.css">
-		<link rel="stylesheet" type="text/css" href="css/responsive.css">
-		<script type="text/javascript" src="js/script.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/responsive.css">
+		<script src="js/script.js"></script>
 	<body>
-		<h1>Rafał Hlebionek</h1>
+		<nav class="navbar navbar-default navbar-fixed-top">	
+			<div class="container">
+				<div class="navbar-header">
+			 		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-nav" aria-expanded="false">
+					    <span class="sr-only">Toggle navigation</span>
+					    <span class="icon-bar"></span>
+					    <span class="icon-bar"></span>
+					    <span class="icon-bar"></span>
+					</button>
+		 		<a href="#" class="navbar-brand"><span class="glyphicon glyphicon-tower" aria-hidden="true"></span>Portfolio</a>
+				</div>
+				<div class="collapse navbar-collapse" id="bs-nav">
+					<ul class="nav navbar-nav">
+			          <li><a href="#">About</a></li>
+			          <li><a href="#">Contact</a></li>
+			        </ul> 
+				</div>
+			</div>	
+		</nav>
+
+		<header>
+			<img class="logo photo"  
+									 srcset="img/Udacity_logo_360w.png 35w,
+											 img/Udacity_logo_640w.png 71w,
+					             			 img/Udacity_logo_768w.png 71w,
+					             			 img/Udacity_logo_900w.png 100w"
+					     			 sizes="(max-width: 360px) 35px,
+					     			 		(max-width: 640px) 71px,
+					            			(max-width: 768px) 71px,
+					            			 100px"
+					     			 src="img/Udacity_logo_900w.png" alt="Udacity">
+			<div class="header_text">
+				<h1 class="header_title">Rafał Hlebionek</h1>
+				<h2 class="header_description">Front-End Padawan</h2>
+			</div>
+			<div class="header_boarder">
+				<br>
+				<hr class="inset">
+			</div>
+		</header>
+		<main>
+			<section class="main">
+				<section class="main_image">
+					<img class="main_photo photo"  
+									 srcset="img/front-end_360w.jpg 280w,
+									 		 img/front-end_640w.jpg 518w,
+					             			 img/front-end_768w.jpg 680w,
+					             			 img/front-end_900w.jpg 900w"
+					     			 sizes="(max-width: 360px) 360px,
+					     					(max-width: 640px) 640px,
+					            			(max-width: 768px) 768px,
+					            			 900px"
+					     			 src="img/front-end_900w.jpg" alt="Front-End by Andy Jones on Flickr">
+				</section>
+				<section class="featured_header">
+					<h2 class="featured_header">Featured Work</h2>
+				</section>
+				<section class="featured_projects content">
+					<div class="row">
+						<div class="project_list">
+							<div class="project">
+								<img class="project_photo photo"  
+									 srcset="img/hospital_360w.jpg 280w,
+									 		 img/hospital_640w.jpg 170w,
+					             			 img/hospital_768w.jpg 220w,
+					             			 img/hospital_900w.jpg 250w"
+					     			 sizes="(max-width: 360px) 280px,
+					     			 		(max-width: 640px) 170px,
+					            			(max-width: 768px) 220px,
+					            			 250px"
+					     			 src="img/hospital_900w.jpg" alt="Hospital by Hamza Butt on Flickr">
+								<p class="project_title">Auxillium</p>
+								<a href="https://github.com/rafi80/auxillium" class="project_link">https://github.com/rafi80/auxillium</a>
+							</div>
+							<div class="project">
+								<img class="project_photo photo"  
+									 srcset="img/campground_360w.jpg 280w,
+									         img/campground_640w.jpg 170w,
+					             			 img/campground_768w.jpg 220w,
+					             			 img/campground_900w.jpg 250w"
+					     			 sizes="(max-width: 360px) 280px,
+					     			 		(max-width: 640px) 170px,
+					            			(max-width: 768px) 220px,
+					            			 250px"
+					     			 src="img/campground_900w.jpg" alt="Campground by Dmitri Naumov on Flickr">
+								<p class="project_title">Campground</p>
+								<a href="https://github.com/rafi80/the-web-developer-bootcamp" class="project_link">https://github.com/rafi80/the-web-developer-bootcamp</a>
+							</div>
+							<div class="project">
+								<img class="project_photo photo"  
+									 srcset="img/movies_360w.jpg 280w,
+					             			 img/movies_640w.jpg 170w,
+									 		 img/movies_768w.jpg 220w,
+					             			 img/movies_900w.jpg 270w"
+					     			 sizes="(max-width: 360px) 280px,
+					     			 		(max-width: 640px) 170px,
+					            			(max-width: 768px) 220px,
+					            			 250px"
+					     			 src="img/movies_900w.jpg" alt="Movies by Sheryl&#x27;s Boys on Flickr">
+								<p class="project_title">Popular Movies</p>
+								<a href="https://github.com/rafi80/PopularMovies" class="project_link">https://github.com/rafi80/PopularMovies</a>
+							</div>
+						</div>
+					</div>
+				</section>
+			</section>
+		</main>
+		<footer>
+			<hr class="inset">
+			<p class="footer_text">Made in 2018 for Udacity Nanodegree</p>
+		</footer>
+	<script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	</body>
 </html>
 
